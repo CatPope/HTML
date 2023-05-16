@@ -1,0 +1,19 @@
+
+<link rel="stylesheet" href="css/style.css"/>
+
+section#box {
+    background-color: #c6b3ff;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section > a.btn {
+    color: red;
+    font-size: 20px;
+}
+
+h1 + p {
+    border: 3px solid purple;
+}
