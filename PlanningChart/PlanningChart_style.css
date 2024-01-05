@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "묘야체";
+    src: url("./묘야체.ttf") format(truetype);
+}
+
+percentage_text{
+    font-size: 5vw;
+    font-weight: bold;
+    top: 22%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+
+body{
+    font-family: "묘야체";
+    background: white;
+}
+
+.gaugebar {
+    width: 55%;
+    height: 5%;
+    top: 22%;
+    left: 50%;
+    background-color: green;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.frame{
+    width: 60%;
+    height: 70%;
+    right: 50%;
+    bottom: 0px;
+    position: absolute;
+    transform: translateX(50%);
+    background-color: none;
+    border: 5px solid;
+    border-bottom: none;
+    border-top-right-radius: 8%;
+    border-top-left-radius: 8%;
+}
+
+.text_frame{
+    width: 60%;
+    height: 0%;
+    right: 50%;
+    top: 43%;
+    transform: translateX(50%);
+    position: absolute;
+    background-color: none;
+    border: 2.5px solid;
+}
+
+.add{
+    width: 10%;
+    height: 5%;
+    left: 55%;
+    top: 30.5%;
+    position:absolute;
+    background-color: yellowgreen;
+    border: 3px solid green;
+    border-radius: 15px;
+}
+
+.subtract{
+    width: 10%;
+    height: 5%;
+    left: 55%;
+    top: 36.7%;
+    position:absolute;
+    background-color: pink;
+    border: 3px solid red;
+    border-radius: 15px;
+}
