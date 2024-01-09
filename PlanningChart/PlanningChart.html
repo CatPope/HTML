@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Korean">
 <head>
     <title>진행도가 있는 계획표</title>
     <meta charset="UTF-8">
@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="PlanningChart_style.css">
 </head>
 <body>
+    <script src="./PlanningChart_script.js"></script>
     <div class="gaugebar"></div>
     <div class="frame"></div>
-    <div class="add"></div>
-    <div class="subtract"></div>
-    <div class="text_frame"></div>
-    <percentage_text>44.44</percentage_text>
+    <div class="add">+ 추가</div>
+    <div class="subtract">- 삭제</div>
+    <div class="textFrame"></div>
+    <input class="setGoal" type="button" value="set" onclick="setGoal()">
+    <goalText id="goalText">목표: </goalText>
+    <percentageText>44.44</percentageText>
+    <input type="text" name="계획 입력" placeholder="새로운 계획">
+    <input type="text" name="목표 입력" placeholder="새로운 목표">
 </body>
 </html>

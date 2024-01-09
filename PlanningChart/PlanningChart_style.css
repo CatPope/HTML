@@ -3,8 +3,57 @@
     src: url("./묘야체.ttf") format(truetype);
 }
 
-percentage_text{
-    font-size: 5vw;
+
+
+body{
+    font-family: "묘야체";
+    background: white;
+}
+
+input{
+    font-family: "묘야체";
+}
+
+
+
+input[name="계획 입력"]{
+    font-size: 5vh;
+    width: 31%;
+    height: 10%;
+    top: 31%;
+    left: 22%;
+    position: absolute;
+    border-radius: 15px;
+    border-color: skyblue;
+    border-width: 3.5px;
+}
+
+input[name="목표 입력"]{
+    font-size: large;
+    width: 150px;
+    top: 50%;
+    position: absolute;
+    border-width: 3px;
+}
+
+input:focus{
+    outline: none;
+    border-color: rgb(80, 148, 221);
+    box-shadow: 0 0 10px rgba(135, 206, 235, 0.5);
+}
+
+
+
+goalText{
+    font-size: 10vh;
+    font-weight: bold;
+    top: 3%;
+    left: 50%;
+    position: absolute;
+}
+
+percentageText{
+    font-size: 5vh;
     font-weight: bold;
     top: 22%;
     left: 50%;
@@ -14,17 +63,22 @@ percentage_text{
 
 
 
-body{
-    font-family: "묘야체";
-    background: white;
+.setGoal{
+    width: 5%;
+    height: 5%;
+    top: 40%;
+    position: absolute;
+    background-color: yellow;
 }
+
+
 
 .gaugebar {
     width: 55%;
     height: 5%;
     top: 22%;
     left: 50%;
-    background-color: green;
+    background-color: rgb(135, 206, 235);
     position: absolute;
     transform: translate(-50%, -50%);
     border-radius: 20px;
@@ -40,11 +94,11 @@ body{
     background-color: none;
     border: 5px solid;
     border-bottom: none;
-    border-top-right-radius: 8%;
+    border-top-right-radius: 40px;
     border-top-left-radius: 8%;
 }
 
-.text_frame{
+.textFrame{
     width: 60%;
     height: 0%;
     right: 50%;
@@ -64,6 +118,8 @@ body{
     background-color: yellowgreen;
     border: 3px solid green;
     border-radius: 15px;
+    font-size: 4vh;
+    text-align: center;
 }
 
 .subtract{
@@ -75,4 +131,8 @@ body{
     background-color: pink;
     border: 3px solid red;
     border-radius: 15px;
+    font-size: 4vh;
+    text-align: center;
 }
+
+
