@@ -8,15 +8,20 @@
 </head>
 <body>
     <script src="./PlanningChart_script.js"></script>
+
     <div class="gaugebar"></div>
+    <percentageText>44.44</percentageText>
+
     <div class="frame"></div>
+    <div class="textFrame"></div>
+
     <div class="add">+ 추가</div>
     <div class="subtract">- 삭제</div>
-    <div class="textFrame"></div>
+
+    <input type="text" id="inputGoal" name="목표 입력" placeholder="새로운 목표">
     <input class="setGoal" type="button" value="set" onclick="setGoal()">
     <goalText id="goalText">목표: </goalText>
-    <percentageText>44.44</percentageText>
-    <input type="text" name="계획 입력" placeholder="새로운 계획">
-    <input type="text" name="목표 입력" placeholder="새로운 목표">
+    
+    <textarea name="계획 입력" placeholder="새로운 계획"></textarea>
 </body>
 </html>
