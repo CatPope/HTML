@@ -13,23 +13,10 @@ body{
 input{
     font-family: "묘야체";
 }
-input:focus{
-    outline: none;
-    border-color: rgb(80, 148, 221);
-    box-shadow: 0 0 10px rgba(135, 206, 235, 0.5);
-}
-
-textarea{
-    font-family: "묘야체";
-}
-textarea:focus{
-    outline: none;
-    border-color: rgb(80, 148, 221);
-    box-shadow: 0 0 10px rgba(127, 184, 237, 0.5);
-}
 
 
-textarea[name="계획 입력"]{
+
+input[name="계획 입력"]{
     font-size: 5vh;
     width: 31%;
     height: 10%;
@@ -39,12 +26,7 @@ textarea[name="계획 입력"]{
     border-radius: 15px;
     border-color: skyblue;
     border-width: 3.5px;
-    resize: none;
 }
-textarea[name="계획 입력"]::-webkit-scrollbar{
-    display: none;
-}
-
 
 input[name="목표 입력"]{
     font-size: large;
@@ -54,18 +36,20 @@ input[name="목표 입력"]{
     border-width: 3px;
 }
 
+input:focus{
+    outline: none;
+    border-color: rgb(80, 148, 221);
+    box-shadow: 0 0 10px rgba(135, 206, 235, 0.5);
+}
 
 
 
-
-#goalText{
+goalText{
     font-size: 10vh;
     font-weight: bold;
-    top: 10%;
+    top: 3%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 percentageText{
