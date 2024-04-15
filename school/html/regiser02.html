@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 600px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form>
+            <fieldset>
+                <legend>사용자 정보</legend>
+                <ul>
+                    <li><label>아이디<input type="text" autofocus placeholder="4자 ~ 10자 사이, 공백없이"></label></li>
+                    <li><label>이메일<input type="email" required></label></li>
+                    <li><label>비밀번호<input type="password" placeholder="문자, 숫자, 특수문자 포함"></label></li>
+                    <li><label>비밀번호확인<input type="password" required></label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>이벤트와 새로운 소식</legend>
+                <label><input type="radio" name="ad">메일 수신</label>
+                <label><input type="radio" name="ad" checked>메일 수신 안함</label>
+            </fieldset>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </form>
+    </div>
+</body>
+
+</html>
