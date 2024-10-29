@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 5px;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let col = colNum(prompt("한줄에 몇명?"));
+      document.write(`<h1>자리 배치도</h1>`);
+      document.write(`<table>`);
+
+      for (let i = 1; i <= memNum; i++) {
+        if (i % colNum === 1) {
+          document.write(`<tr>`);
+        }
+        document.write(`<td>좌석${i}</td>`);
+        if (i % colNum === 0 || i === memNum) {
+          document.write(`</tr>`);
+        }
+      }
+      document.write(`</table>`);
+    </script>
+  </body>
+</html>

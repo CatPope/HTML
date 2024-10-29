@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a id="link" href="http://www.naver.com">네이버로 가기</a><br />
+    <button onclick="changeLink()">구글로 가기</button>
+
+    <script>
+      const linked_txt = document.querySelector("#link");
+
+      function changeLink() {
+        google_link = "https://www.google.com/";
+        linked_txt.setAttribute("href", google_link);
+        linked_txt.textContent = "구글로 가기";
+      }
+    </script>
+  </body>
+</html>

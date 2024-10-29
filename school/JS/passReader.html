@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let name = prompt("이름 입력");
+      let score = Number(prompt("점수 입력"));
+
+      if (isNaN(score)) {
+        alert("숫자로 입력해라.");
+      } else if (score >= 80) {
+        document.write(`<h1>합격<h1>`);
+        document.write(`${name}님 축하합니다. 점수:${score}`);
+      } else {
+        document.write(`<h1>불합격<h1>`);
+        document.write(`${name}님 노력합시다. 점수:${score}`);
+      }
+    </script>
+  </body>
+</html>

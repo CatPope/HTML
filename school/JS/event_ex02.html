@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="small">
+      <img
+        src="../image/coffee-pink.jpg"
+        alt="에디오피아 게뎁"
+        id="cup"
+        width="200"
+        height="200"
+      />
+      <div id="big">
+        <img src="../image/coffee-pink.jpg" alt="big" />
+        <img src="../image/coffee-blue.jpg" alt="big" />
+        <img src="../image/coffee-gray.jpg" alt="big" />
+      </div>
+    </div>
+
+    <script>
+      let cup = document.querySelector("#cup");
+      let big = document.querySelectorAll("#big img");
+
+      big.addEventListener("click", () => {
+        config(big);
+        let src = big.getAttribute("src");
+        cup.setAttribute("src", src);
+      });
+    </script>
+  </body>
+</html>

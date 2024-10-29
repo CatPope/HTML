@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let colNum = Number(prompt("한줄에 몇명?"));
+      let memNum = Number(prompt(`총 몇명?`));
+
+      if (isNaN(colNum) || isNaN(memNum) || colNum <= 0 || memNum <= 0) {
+        alert("올바른 숫자를 입력해 주세요.");
+      } else {
+        document.write(`<h1>자리배치도</h1>`);
+        document.write(`<table>`);
+
+        // Calculate the number of rows required
+        let numRows = Math.ceil(memNum / colNum);
+
+        for (let i = 0; i < numRows; i++) {
+          document.write(`<tr>`);
+          for (let j = 0; j < colNum; j++) {
+            let seatNumber = i * colNum + j + 1;
+            if (seatNumber <= memNum) {
+              document.write(`<td>좌석 ${seatNumber}</td>`);
+            } else {
+              document.write(`<td></td>`); // Empty cell
+            }
+          }
+          document.write(`</tr>`);
+        }
+
+        document.write(`</table>`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1." />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let name = prompt("이름 입력");
+      let score = parseInt(prompt("점수 입력")) / 10;
+      let result;
+
+      if (isNaN(score)) {
+        result = "숫자를 입력해주세요.";
+      } else if (score < 10 || score > 0) {
+        result = "0~100사이 수로 해줘.";
+      } else {
+        switch (Math.floor(score)) {
+          case 9 || 10:
+            result = "A";
+            break;
+          case 8:
+            result = "B";
+            break;
+          case 7:
+            result = "C";
+            break;
+          case 6:
+            result = "D";
+            break;
+          default:
+            result = "F";
+            break;
+        }
+      }
+
+      document.write(`<h2>${name}의 등급은 ${result} 입니다.<h2>`);
+    </script>
+  </body>
+</html>

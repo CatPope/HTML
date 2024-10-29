@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>요소 선택하기</h1>
+    <ul>
+      <li class="first">첫 번째 아이템이에요!</li>
+      <li class="even">두 번째 아이템이에요!</li>
+      <li>세 번째 아이템이에요!</li>
+      <li class="even">네 번째 아이템이에요!</li>
+      <li>다섯 번째 아이템이에요!</li>
+    </ul>
+
+    <script>
+      const first = document.querySelector(".first");
+      const evens = document.querySelectorAll(".even");
+
+      first.style.color = "red";
+      for (const even of evens) {
+        even.style.color = "blue";
+      }
+    </script>
+  </body>
+</html>

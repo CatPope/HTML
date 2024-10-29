@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="prod-pic">
+      <img
+        src="../image/coffee-pink.jpg"
+        id="cup"
+        width="200"
+        onclick="displaySrc()"
+      />
+
+      <script>
+        const pic = document.querySelector("#cup");
+        function displaySrc() {
+          alert(`이미지 소스: ${pic.getAttribute("width")}`);
+        }
+      </script>
+    </div>
+  </body>
+</html>

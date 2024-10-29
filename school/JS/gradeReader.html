@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let name = prompt("이름 입력");
+      let score = Number(prompt("점수 입력"));
+      let result;
+
+      switch (true) {
+        case score >= 90 && score <= 100:
+          result = "A";
+          break;
+        case score >= 80:
+          result = "B";
+          break;
+        case score >= 70:
+          result = "C";
+          break;
+        case score >= 60:
+          result = "D";
+          break;
+        case score >= 0 && score < 60:
+          result = "F";
+          break;
+        default:
+          result = "0에서 100사이의 숫자로 입력해라.";
+          break;
+      }
+
+      document.write(`<h2>당신의 등급은 ${result} 입니다.<h2>`);
+    </script>
+  </body>
+</html>
